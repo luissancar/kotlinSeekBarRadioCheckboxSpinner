@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Borrarrr</string>
+    <string name="title_activity_dos">Dos</string>
+    <string-array name="items">
+        <item>Uno</item>
+        <item>Dos</item>
+        <item>Tres</item>
+        <item>Cuatro</item>
+    </string-array>
+</resources>
