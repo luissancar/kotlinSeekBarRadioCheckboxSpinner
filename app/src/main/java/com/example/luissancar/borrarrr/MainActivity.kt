@@ -53,13 +53,21 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
         seekBar.setOnSeekBarChangeListener(this)
 
+        seekBar2.setOnSeekBarChangeListener(this)
+
 
 
     }
 
 
     override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
-        textViewSeek.text=seekBar.progress.toString()
+
+        val se=p0?.equals(seekBar)
+        if (se!=null)
+            if (se)
+                textViewSeek.text=p0?.progress.toString()
+            else
+                textViewSeek2.text=p1.toString()
     }
 
     override fun onStartTrackingTouch(p0: SeekBar?) {
